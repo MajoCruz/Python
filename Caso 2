@@ -96,9 +96,6 @@ def display_value(selected_año,selected_mes):
                                style_header={'backgroundColor':'blue',
                                             'color':'white'},
                                ))
-#setear server y correr
-if__name__=="__main__":
-    app.run_server(debug=False,host ="0.0.0.0", port=10000)
     
 
 df5= pd.read_excel("/Users/majocruz/Desktop/Python For Finance/IMAE.xlsx")
@@ -182,11 +179,7 @@ def display_value(selected_año,selected_mes):
                                fill_width=True,
                                style_header={'backgroundColor':'blue',
                                             'color':'white'},
-                               ))
-#setear server y correr
-if__name__=="__main__":
-    app4.run_server(debug=False,host ="0.0.0.0", port=10001)
-    
+                               ))    
 
 df8 = pd.read_excel("/Users/majocruz/Desktop/Python For Finance/Ingreso por Exportaciones.xlsx")
 
@@ -271,4 +264,4 @@ def display_value(selected_uno,selected_dos):
                                ))
 #setear server y correr
 if__name__=="__main__":
-    app7.run_server(debug=False,host ="0.0.0.0", port=10002)
+    app.run_server(debug=False,host ="0.0.0.0", port=10000)
