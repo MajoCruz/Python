@@ -15,9 +15,9 @@ import dash_bootstrap_components as dbc
 from dash import Dash,dcc,html,Input,Output
 import time
 
-df= pd.read_excel("/Users/majocruz/Desktop/Python For Finance/inflacion.xlsx")
-df5 = pd.read_excel("/Users/majocruz/Desktop/Python For Finance/IMAE.xlsx")
-df8 = pd.read_excel("/Users/majocruz/Desktop/Python For Finance/Ingreso por Exportaciones.xlsx")
+df= pd.read_excel("inflacion.xlsx")
+df5 = pd.read_excel("IMAE.xlsx")
+df8 = pd.read_excel("Ingreso por Exportaciones.xlsx")
 
 #construir dashboard
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
