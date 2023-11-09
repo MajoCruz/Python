@@ -13,6 +13,7 @@ import plotly.express as px
 import pandas as pd
 import dash_bootstrap_components as dbc
 from dash import Dash,dcc,html,Input,Output
+import time
 
 df= pd.read_excel("/Users/majocruz/Desktop/Python For Finance/inflacion.xlsx")
 df5 = pd.read_excel("/Users/majocruz/Desktop/Python For Finance/IMAE.xlsx")
