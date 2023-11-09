@@ -215,5 +215,4 @@ def display_value(selected_uno,selected_dos):
                                ))
 
 #setear server y correr
-if__name__=="__main__":
-    app.run_server(debug=False,host ="0.0.0.0", port=10000)
+app.run_server(debug=False,host ="0.0.0.0", port=10000)
