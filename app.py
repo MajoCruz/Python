@@ -38,7 +38,7 @@ app.layout = html.Div([
         
     html.Div(dcc.Dropdown(
     id="Inflacion_total",value="Inflacion",clearable=False,
-    options=[{'label':x,'value':x} for x in cuentas]), className="six columns"),className="row",className="custom-dropdown",
+    options=[{'label':x,'value':x} for x in cuentas]), className="six columns"),
     
     html.Div([dcc.Graph(id="graph",figure={},config={"displayModeBar":True,"displaylogo":False,
                                                     }),],style={'width':'1100px'}),
@@ -55,7 +55,7 @@ app.layout = html.Div([
     #IMAEA
     html.Div(dcc.Dropdown(
     id="Indice",value="Indice",clearable=False,
-    options=[{'label':x,'value':x} for x in cuentas2]), className="six columns"), className="row",className="custom-dropdown",
+    options=[{'label':x,'value':x} for x in cuentas2]), className="six columns"), 
 
     html.Div([dcc.Graph(id="graph1",figure={},config={"displayModeBar":True,"displaylogo":False,
                                                     }),],style={'width':'1100px'}),
