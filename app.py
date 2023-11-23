@@ -22,11 +22,21 @@ import scipy.stats as stats
 import matplotlib.pyplot as plt
 import math
 
+
 stocks=["BN.PA", "KO", "MDLZ","MMC", "NESN.SW", "PEP"]
 end= datetime.datetime.now()
 start= end - datetime.timedelta(days=365*3)
 
 data= yf.download(stocks, start=start, end=end)["Adj Close"].dropna()
+
+returns= data.pct_change()
+returns
+pesos= np.array([1/3, 1/3,1/3])
+pesos
+returns2["Portafolio"]=returns2.dot(pesos)
+ret_acumulado= (1+returns2).cumprod()
+ret_acumulado
+
 
 #construir dashboard
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -89,5 +99,5 @@ def actualizar_grafico(acciones, selector, fechas):
     return fig
 
 #setear server y correr
-if__name__=="__main__"
-    app.run_server(debug=False,host ="0.0.0.0", port=10002)
+if__name__=="__main__":
+    app.run_server(debug=False,host ="0.0.0.0", port=10000)
